@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Deals Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+    background: #232F3E;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .deal {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            flex: 1 1 calc(25% - 20px); /* Default to 4 items in a row */
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .deal:hover {
+            transform: scale(1.05);
+        }
+        .deal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .price {
+            font-size: 20px;
+            color: #b12704;
+            margin: 10px 0;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #555;
+        }
+        .cta-button {
+            background-color: #ffa41c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #e07b00;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 900px) {
+            .deal {
+                flex: 1 1 calc(33.333% - 20px); /* 3 items in a row */
+            }
+        }
+        @media (max-width: 600px) {
+            .deal {
+                flex: 1 1 calc(50% - 20px); /* 2 items in a row */
+            }
+        }
+        @media (max-width: 400px) {
+            .deal {
+                flex: 1 1 100%; /* 1 item in a row */
+            }
+        }
+    </style>
+</head>
+<body> <header>
+    <div class="container">
+        <h1 style="width: 100%; text-align: center;">Today's Deals</h1>
+        <div class="deal">
+            <img src="download (4).jpeg" alt="Deal 1">
+            <h2>Deal Name 1</h2>
+            <p class="price">$19.99 <span class="original-price">$29.99</span></p>
+            <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID_1" class="cta-button">Shop Now</a>
+        </div>
+        <div class="deal">
+            <img src="download (3).jpeg" alt="Deal 2">
+            <h2>Deal Name 2</h2>
+            <p class="price">$25.99 <span class="original-price">$35.99</span></p>
+            <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID_2" class="cta-button">Shop Now</a>
+        </div>
+        <div class="deal">
+            <img src="download (2).jpeg" alt="Deal 3">
+            <h2>Deal Name 3</h2>
+            <p class="price">$15.49 <span class="original-price">$24.99</span></p>
+            <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID_3" class="cta-button">Shop Now</a>
+        </div>
+        <div class="deal">
+            <img src="download (1).jpeg" alt="Deal 4">
+            <h2>Deal Name 4</h2>
+            <p class="price">$30.00 <span class="original-price">$40.00</span></p>
+            <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID_4" class="cta-button">Shop Now</a>
+        </div>
+        <!-- Add more deals as needed -->
+    </div>
+</body>
+</html>
